@@ -22,7 +22,7 @@ Register-AWSCompleter
 Apache-2.0
 
 ## Release Notes:
-Initial Release, stable but PRs and Issues are welcome.
+Largely stable but PRs and Issues are welcome.
 
 ## Known Issues:
 - If you run this on PowerShell Core in Linux you may need to upgrade `PSReadline` to version [2.0.1](https://www.powershellgallery.com/packages/PSReadline/2.0.1).
