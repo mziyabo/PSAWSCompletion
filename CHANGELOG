@@ -1,3 +1,8 @@
+## Upcoming
+- Moving from ArrayLists to Arrays to improve memory allocation 
+- Removed White-space to reduce module file size- again for memory
+- Now invokes Register-AWSCompleter on Imporr-Module - No Need to call Register-AWSCompleter
+
 ## 1.0.0 2020-05-03
 - Fixed SessionStateOverflow in 5.1 by increasing $MaximumFunctionCount :/
 

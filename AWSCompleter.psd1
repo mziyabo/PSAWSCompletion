@@ -27,7 +27,7 @@ Author = 'mziyabo'
 CompanyName = ''
 
 # Copyright statement for this module
-Copyright = '(c) 2020 mziyabo. All rights reserved.'
+Copyright = '(c) mziyabo. All rights reserved.'
 
 # Description of the functionality provided by this module
 Description = 'awscli auto-completion for PowerShell'
