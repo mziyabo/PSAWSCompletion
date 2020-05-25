@@ -393,7 +393,7 @@ function Get-acm-pca-create-certificate-authority{
 function Get-acm-pca-create-certificate-authority-audit-report{
    $flags=(
       "--certificate-authority-arn", 
-      "--s", 
+      "--s3-bucket-name", 
       "--audit-report-response-format", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
@@ -749,8 +749,8 @@ function Get-alexaforbusiness-create-address-book{
 function Get-alexaforbusiness-create-business-report-schedule{
    $flags=(
       "--schedule-name", 
-      "--s", 
-      "--s", 
+      "--s3-bucket-name", 
+      "--s3-key-prefix", 
       "--format", 
       "--content-range", 
       "--recurrence", 
@@ -1487,8 +1487,8 @@ function Get-alexaforbusiness-update-address-book{
 function Get-alexaforbusiness-update-business-report-schedule{
    $flags=(
       "--schedule-arn", 
-      "--s", 
-      "--s", 
+      "--s3-bucket-name", 
+      "--s3-key-prefix", 
       "--format", 
       "--schedule-name", 
       "--recurrence", 
@@ -6111,21 +6111,21 @@ function Get-appsync{
       "create-api-cache", 
       "create-api-key", 
       "create-data-source", 
-      "create-", 
+      "create-function", 
       "create-graphql-api", 
       "create-resolver", 
       "create-type", 
       "delete-api-cache", 
       "delete-api-key", 
       "delete-data-source", 
-      "delete-", 
+      "delete-function", 
       "delete-graphql-api", 
       "delete-resolver", 
       "delete-type", 
       "flush-api-cache", 
       "get-api-cache", 
       "get-data-source", 
-      "get-", 
+      "get-function", 
       "get-graphql-api", 
       "get-introspection-schema", 
       "get-resolver", 
@@ -6133,10 +6133,10 @@ function Get-appsync{
       "get-type", 
       "list-api-keys", 
       "list-data-sources", 
-      "list-s", 
+      "list-functions", 
       "list-graphql-apis", 
       "list-resolvers", 
-      "list-resolvers-by-", 
+      "list-resolvers-by-function", 
       "list-tags-for-resource", 
       "list-types", 
       "start-schema-creation", 
@@ -6145,7 +6145,7 @@ function Get-appsync{
       "update-api-cache", 
       "update-api-key", 
       "update-data-source", 
-      "update-", 
+      "update-function", 
       "update-graphql-api", 
       "update-resolver", 
       "update-type "
@@ -10936,9 +10936,9 @@ function Get-cloudformation-deploy{
    $flags=(
       "--template-file", 
       "--stack-name", 
-      "--s", 
+      "--s3-bucket", 
       "--force-upload", 
-      "--s", 
+      "--s3-prefix", 
       "--kms-key-id", 
       "--parameter-overrides", 
       "--capabilities", 
@@ -11300,8 +11300,8 @@ function Get-cloudformation-list-types{
 function Get-cloudformation-package{
    $flags=(
       "--template-file", 
-      "--s", 
-      "--s", 
+      "--s3-bucket", 
+      "--s3-prefix", 
       "--kms-key-id", 
       "--output-template-file", 
       "--use-json", 
@@ -12650,8 +12650,8 @@ function Get-cloudtrail-add-tags{
 function Get-cloudtrail-create-trail{
    $flags=(
       "--name", 
-      "--s", 
-      "--s", 
+      "-s3-bucket-name", 
+      "--s3-key-prefix", 
       "--sns-topic-name", 
       "--include-global-service-events", 
       "--no-include-global-service-events", 
@@ -12810,8 +12810,8 @@ function Get-cloudtrail-stop-logging{
 function Get-cloudtrail-update-trail{
    $flags=(
       "--name", 
-      "--s", 
-      "--s", 
+      "--s3-bucket-name", 
+      "--s3-key-prefix", 
       "--sns-topic-name", 
       "--include-global-service-events", 
       "--no-include-global-service-events", 
@@ -12834,8 +12834,8 @@ function Get-cloudtrail-validate-logs{
       "--trail-arn", 
       "--start-time", 
       "--end-time", 
-      "--s", 
-      "--s", 
+      "--s3-bucket", 
+      "--s3-prefix", 
       "--account-id", 
       "--verbose "
     );
@@ -18732,10 +18732,10 @@ function Get-configservice-put-configuration-recorder{
 function Get-configservice-put-conformance-pack{
    $flags=(
       "--conformance-pack-name", 
-      "--template-s", 
+      "--template-s3-uri", 
       "--template-body", 
-      "--delivery-s", 
-      "--delivery-s", 
+      "--delivery-s3-bucket", 
+      "--delivery-s3-key-prefix", 
       "--conformance-pack-input-parameters", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
@@ -18775,10 +18775,10 @@ function Get-configservice-put-organization-config-rule{
 function Get-configservice-put-organization-conformance-pack{
    $flags=(
       "--organization-conformance-pack-name", 
-      "--template-s", 
+      "--template-s3-uri", 
       "--template-body", 
-      "--delivery-s", 
-      "--delivery-s", 
+      "--delivery-s3-bucket", 
+      "--delivery-s3-key-prefix", 
       "--conformance-pack-input-parameters", 
       "--excluded-accounts", 
       "--cli-input-json", 
@@ -18883,7 +18883,7 @@ function Get-configservice-stop-configuration-recorder{
 }
 function Get-configservice-subscribe{
    $flags=(
-      "--s", 
+      "--s3-bucket", 
       "--sns-topic", 
       "--iam-role "
     );
@@ -19963,9 +19963,9 @@ function Get-datasync-create-location-nfs{
 function Get-datasync-create-location-s3{
    $flags=(
       "--subdirectory", 
-      "--s", 
-      "--s", 
-      "--s", 
+      "--s3-bucket-arn", 
+      "--s3-storage-class", 
+      "--s3-config", 
       "--tags", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
@@ -20588,7 +20588,7 @@ function Get-deploy-create-deployment{
       "--update-outdated-instances-only", 
       "--no-update-outdated-instances-only", 
       "--file-exists-behavior", 
-      "--s", 
+      "--s3-location", 
       "--github-location", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
@@ -20690,7 +20690,7 @@ function Get-deploy-get-application-revision{
    $flags=(
       "--application-name", 
       "--revision", 
-      "--s", 
+      "--s3-location", 
       "--github-location", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
@@ -20752,8 +20752,8 @@ function Get-deploy-list-application-revisions{
       "--application-name", 
       "--sort-by", 
       "--sort-order", 
-      "--s", 
-      "--s", 
+      "--s3-bucket", 
+      "--s3-key-prefix", 
       "--deployed", 
       "--cli-input-json", 
       "--starting-token", 
@@ -20846,7 +20846,7 @@ function Get-deploy-list-tags-for-resource{
 function Get-deploy-push{
    $flags=(
       "--application-name", 
-      "--s", 
+      "--s3-location", 
       "--ignore-hidden-files", 
       "--no-ignore-hidden-files", 
       "--source", 
@@ -20877,7 +20877,7 @@ function Get-deploy-register-application-revision{
       "--application-name", 
       "--description", 
       "--revision", 
-      "--s", 
+      "--s3-location", 
       "--github-location", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
@@ -22907,7 +22907,7 @@ function Get-dms-create-endpoint{
       "--service-access-role-arn", 
       "--external-table-definition", 
       "--dynamo-db-settings", 
-      "--s", 
+      "--s3-settings", 
       "--dms-transfer-settings", 
       "--mongo-db-settings", 
       "--kinesis-settings", 
@@ -23279,7 +23279,7 @@ function Get-dms-modify-endpoint{
       "--service-access-role-arn", 
       "--external-table-definition", 
       "--dynamo-db-settings", 
-      "--s", 
+      "--s3-settings", 
       "--dms-transfer-settings", 
       "--mongo-db-settings", 
       "--kinesis-settings", 
@@ -26325,7 +26325,7 @@ function Get-ec2-create-image{
 function Get-ec2-create-instance-export-task{
    $flags=(
       "--description", 
-      "--export-to-s", 
+      "--export-to-s3-task", 
       "--instance-id", 
       "--target-environment", 
       "--cli-input-json", 
@@ -29211,7 +29211,7 @@ function Get-ec2-export-image{
       "--dry-run", 
       "--no-dry-run", 
       "--image-id", 
-      "--s", 
+      "--s3-export-location", 
       "--role-name", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
@@ -29222,7 +29222,7 @@ function Get-ec2-export-transit-gateway-routes{
    $flags=(
       "--transit-gateway-route-table-id", 
       "--filters", 
-      "--s", 
+      "--s3-bucket", 
       "--dry-run", 
       "--no-dry-run", 
       "--cli-input-json", 
@@ -35642,8 +35642,8 @@ function Get-firehose-create-delivery-stream{
       "--delivery-stream-type", 
       "--kinesis-stream-source-configuration", 
       "--delivery-stream-encryption-configuration-input", 
-      "--s", 
-      "--extended-s", 
+      "--s3-destination-configuration", 
+      "--extended-s3-destination-configuration", 
       "--redshift-destination-configuration", 
       "--elasticsearch-destination-configuration", 
       "--splunk-destination-configuration", 
@@ -35751,8 +35751,8 @@ function Get-firehose-update-destination{
       "--delivery-stream-name", 
       "--current-delivery-stream-version-id", 
       "--destination-id", 
-      "--s", 
-      "--extended-s", 
+      "--s3-destination-update", 
+      "--extended-s3-destination-update", 
       "--redshift-destination-update", 
       "--elasticsearch-destination-update", 
       "--splunk-destination-update", 
@@ -38456,8 +38456,8 @@ function Get-globalaccelerator-update-accelerator-attributes{
       "--accelerator-arn", 
       "--flow-logs-enabled", 
       "--no-flow-logs-enabled", 
-      "--flow-logs-s", 
-      "--flow-logs-s", 
+      "--flow-logs-s3-bucket", 
+      "--flow-logs-s3-prefix", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
     );
@@ -38524,7 +38524,7 @@ function Get-glue{
       "create-security-configuration", 
       "create-table", 
       "create-trigger", 
-      "create-user-defined-", 
+      "create-user-defined-function", 
       "create-workflow", 
       "delete-classifier", 
       "delete-connection", 
@@ -38539,7 +38539,7 @@ function Get-glue{
       "delete-table", 
       "delete-table-version", 
       "delete-trigger", 
-      "delete-user-defined-", 
+      "delete-user-defined-function", 
       "delete-workflow", 
       "get-catalog-import-status", 
       "get-classifier", 
@@ -38578,8 +38578,8 @@ function Get-glue{
       "get-tags", 
       "get-trigger", 
       "get-triggers", 
-      "get-user-defined-", 
-      "get-user-defined-s", 
+      "get-user-defined-function", 
+      "get-user-defined-functions", 
       "get-workflow", 
       "get-workflow-run", 
       "get-workflow-run-properties", 
@@ -38621,7 +38621,7 @@ function Get-glue{
       "update-partition", 
       "update-table", 
       "update-trigger", 
-      "update-user-defined-", 
+      "update-user-defined-function", 
       "update-workflow "
     );
    return $commands;
@@ -38809,8 +38809,8 @@ function Get-glue-create-dev-endpoint{
       "--worker-type", 
       "--glue-version", 
       "--number-of-workers", 
-      "--extra-python-libs-s", 
-      "--extra-jars-s", 
+      "--extra-python-libs-s3-path", 
+      "--extra-jars-s3-path", 
       "--security-configuration", 
       "--tags", 
       "--arguments", 
@@ -39649,7 +39649,7 @@ function Get-glue-start-crawler-schedule{
 function Get-glue-start-export-labels-task-run{
    $flags=(
       "--transform-id", 
-      "--output-s", 
+      "--output-s3-path", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
     );
@@ -39658,7 +39658,7 @@ function Get-glue-start-export-labels-task-run{
 function Get-glue-start-import-labels-task-run{
    $flags=(
       "--transform-id", 
-      "--input-s", 
+      "--input-s3-path", 
       "--replace-all-labels", 
       "--no-replace-all-labels", 
       "--cli-input-json", 
@@ -39694,7 +39694,7 @@ function Get-glue-start-ml-evaluation-task-run{
 function Get-glue-start-ml-labeling-set-generation-task-run{
    $flags=(
       "--transform-id", 
-      "--output-s", 
+      "--output-s3-path", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
     );
@@ -40116,9 +40116,9 @@ function Get-greengrass-create-function-definition-version{
       "--amzn-client-token", 
       "--default-config", 
       "---definition-id", 
-      "--s", 
+      "--functions", 
       "--cli-input-json", 
-      "--generate-cli-skeleton "
+      "--generate-cli-skeleton"
     );
    return $flags;
 }
@@ -40203,7 +40203,7 @@ function Get-greengrass-create-resource-definition-version{
 function Get-greengrass-create-software-update-job{
    $flags=(
       "--amzn-client-token", 
-      "--s", 
+      "--s3-url-signer-role", 
       "--software-to-update", 
       "--update-agent-log-level", 
       "--update-targets", 
@@ -48417,7 +48417,7 @@ function Get-iotthingsgraph-create-system-instance{
       "--definition", 
       "--target", 
       "--greengrass-group-name", 
-      "--s", 
+      "--s3-bucket-name", 
       "--metrics-configuration", 
       "--flow-actions-role-arn", 
       "--cli-input-json", 
@@ -49030,7 +49030,7 @@ function Get-kendra-create-faq{
       "--index-id", 
       "--name", 
       "--description", 
-      "--s", 
+      "--s3-path", 
       "--role-arn", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
@@ -49768,7 +49768,7 @@ function Get-kinesisanalytics-discover-input-schema{
       "--resource-arn", 
       "--role-arn", 
       "--input-starting-position-configuration", 
-      "--s", 
+      "--s3-configuration", 
       "--input-processing-configuration", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
@@ -50045,7 +50045,7 @@ function Get-kinesisanalyticsv2-discover-input-schema{
       "--resource-arn", 
       "--service-execution-role", 
       "--input-starting-position-configuration", 
-      "--s", 
+      "--s3-configuration", 
       "--input-processing-configuration", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
@@ -51027,7 +51027,7 @@ function Get-lambda{
       "get-account-settings", 
       "get-alias", 
       "get-event-source-mapping", 
-      "get-", 
+      "get-function", 
       "get-function-concurrency", 
       "get-function-configuration", 
       "get-function-event-invoke-config", 
@@ -51045,7 +51045,7 @@ function Get-lambda{
       "list-layers", 
       "list-provisioned-concurrency-configs", 
       "list-tags", 
-      "list-versions-by-", 
+      "list-versions-by-function", 
       "publish-layer-version", 
       "publish-version", 
       "put-function-concurrency", 
@@ -51558,9 +51558,9 @@ function Get-lambda-update-function-code{
    $flags=(
       "---name", 
       "--zip-file", 
-      "--s", 
-      "--s", 
-      "--s", 
+      "--s3-bucket", 
+      "--s3-key", 
+      "--s3-object-version", 
       "--publish", 
       "--no-publish", 
       "--dry-run", 
@@ -52318,7 +52318,7 @@ function Get-license-manager-update-license-specifications-for-resource{
 }
 function Get-license-manager-update-service-settings{
    $flags=(
-      "--s", 
+      "--s3-bucket-arn", 
       "--sns-topic-arn", 
       "--organization-configuration", 
       "--enable-cross-accounts-discovery", 
@@ -54362,7 +54362,7 @@ function Get-macie-associate-member-account{
 function Get-macie-associate-s3-resources{
    $flags=(
       "--member-account-id", 
-      "--s", 
+      "--s3-resources", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
     );
@@ -54379,7 +54379,7 @@ function Get-macie-disassociate-member-account{
 function Get-macie-disassociate-s3-resources{
    $flags=(
       "--member-account-id", 
-      "--associated-s", 
+      "--associated-s3-resources", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
     );
@@ -54409,7 +54409,7 @@ function Get-macie-list-s3-resources{
 function Get-macie-update-s3-resources{
    $flags=(
       "--member-account-id", 
-      "--s", 
+      "--s3-resources-update", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
     );
@@ -54756,12 +54756,12 @@ function Get-marketplacecommerceanalytics-generate-data-set{
       "--data-set-type", 
       "--data-set-publication-date", 
       "--role-name-arn", 
-      "--destination-s", 
-      "--destination-s", 
+      "--destination-s3-bucket-name", 
+      "--destination-s3-prefix", 
       "--sns-topic-arn", 
       "--customer-defined-values", 
       "--cli-input-json", 
-      "--generate-cli-skeleton "
+      "--generate-cli-skeleton"
     );
    return $flags;
 }
@@ -54770,8 +54770,8 @@ function Get-marketplacecommerceanalytics-start-support-data-export{
       "--data-set-type", 
       "--from-date", 
       "--role-name-arn", 
-      "--destination-s", 
-      "--destination-s", 
+      "--destination-s3-bucket-name", 
+      "--destination-s3-prefix", 
       "--sns-topic-arn", 
       "--customer-defined-values", 
       "--cli-input-json", 
@@ -55859,7 +55859,7 @@ function Get-mediapackage-create-harvest-job{
       "--end-time", 
       "--id", 
       "--origin-endpoint-id", 
-      "--s", 
+      "--s3-destination", 
       "--start-time", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
@@ -62898,8 +62898,8 @@ function Get-polly-start-speech-synthesis-task{
       "--language-code", 
       "--lexicon-names", 
       "--output-format", 
-      "--output-s", 
-      "--output-s", 
+      "--output-s3-bucket-name", 
+      "--output-s3-key-prefix", 
       "--sample-rate", 
       "--sns-topic-arn", 
       "--speech-mark-types", 
@@ -63032,7 +63032,7 @@ function Get-qldb-export-journal-to-s3{
       "--name", 
       "--inclusive-start-time", 
       "--exclusive-end-time", 
-      "--s", 
+      "--s3-export-configuration ", 
       "--role-arn", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
@@ -65946,9 +65946,9 @@ function Get-rds-restore-db-cluster-from-s3{
       "--no-enable-iam-database-authentication", 
       "--source-engine", 
       "--source-engine-version", 
-      "--s", 
-      "--s", 
-      "--s", 
+      "--s3-bucket-name", 
+      "--s3-prefix", 
+      "--s3-ingestion-role-arn", 
       "--backtrack-window", 
       "--enable-cloudwatch-logs-exports", 
       "--deletion-protection", 
@@ -66107,9 +66107,9 @@ function Get-rds-restore-db-instance-from-s3{
       "--no-enable-iam-database-authentication", 
       "--source-engine", 
       "--source-engine-version", 
-      "--s", 
-      "--s", 
-      "--s", 
+      "--s3-bucket-name", 
+      "--s3-prefix", 
+      "--s3-ingestion-role-arn", 
       "--enable-performance-insights", 
       "--no-enable-performance-insights", 
       "--performance-insights-kms-key-id", 
@@ -66215,10 +66215,10 @@ function Get-rds-start-export-task{
    $flags=(
       "--export-task-identifier", 
       "--source-arn", 
-      "--s", 
+      "--s3-bucket-name", 
       "--iam-role-arn", 
       "--kms-key-id", 
-      "--s", 
+      "--s3-prefix", 
       "--export-only", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
@@ -67169,7 +67169,7 @@ function Get-redshift-enable-logging{
    $flags=(
       "--cluster-identifier", 
       "--bucket-name", 
-      "--s", 
+      "--s3-key-prefix", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
     );
@@ -68242,7 +68242,7 @@ function Get-resourcegroupstaggingapi-get-tag-values{
 }
 function Get-resourcegroupstaggingapi-start-report-creation{
    $flags=(
-      "--s", 
+      "--s3-bucket", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
     );
@@ -71643,7 +71643,7 @@ function Get-sagemaker-create-labeling-job{
       "--input-config", 
       "--output-config", 
       "--role-arn", 
-      "--label-category-config-s", 
+      "--label-category-config-s3-uri", 
       "--stopping-conditions", 
       "--labeling-job-algorithms-config", 
       "--human-task-config", 
@@ -78788,7 +78788,7 @@ function Get-ssm-create-patch-baseline{
 function Get-ssm-create-resource-data-sync{
    $flags=(
       "--sync-name", 
-      "--s", 
+      "--s3-destination", 
       "--sync-type", 
       "--sync-source", 
       "--cli-input-json", 
@@ -79815,9 +79815,9 @@ function Get-ssm-send-command{
       "--timeout-seconds", 
       "--comment", 
       "--parameters", 
-      "--output-s", 
-      "--output-s", 
-      "--output-s", 
+      "--output-s3-region", 
+      "--output-s3-bucket-name", 
+      "--output-s3-key-prefix", 
       "--max-concurrency", 
       "--max-errors", 
       "--service-role-arn", 
@@ -82041,7 +82041,7 @@ function Get-synthetics-create-canary{
    $flags=(
       "--name", 
       "--code", 
-      "--artifact-s", 
+      "--artifact-s3-location", 
       "--execution-role-arn", 
       "--schedule", 
       "--run-config", 
@@ -83011,7 +83011,7 @@ function Get-waf-create-web-acl{
 function Get-waf-create-web-acl-migration-stack{
    $flags=(
       "--web-acl-id", 
-      "--s", 
+      "--s3-bucket-name", 
       "--ignore-unsupported-type", 
       "--no-ignore-unsupported-type", 
       "--cli-input-json", 
@@ -83826,7 +83826,7 @@ function Get-waf-regional-create-web-acl{
 function Get-waf-regional-create-web-acl-migration-stack{
    $flags=(
       "--web-acl-id", 
-      "--s", 
+      "--s3-bucket-name", 
       "--ignore-unsupported-type", 
       "--no-ignore-unsupported-type", 
       "--cli-input-json", 
