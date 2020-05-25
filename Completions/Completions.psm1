@@ -349,9 +349,7 @@ function Get-acm-update-certificate-options{
    return $flags;
 }
 function Get-acm-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-acm-pca{
@@ -576,9 +574,7 @@ function Get-acm-pca-update-certificate-authority{
    return $flags;
 }
 function Get-acm-pca-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-alexaforbusiness{
@@ -6107,9 +6103,7 @@ function Get-appstream-update-stack{
    return $flags;
 }
 function Get-appstream-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-appsync{
@@ -9523,7 +9517,7 @@ function Get-chime-put-events-configuration{
       "--account-id", 
       "--bot-id", 
       "--outbound-events-https-endpoint", 
-      "--lambda--arn", 
+      "--lambda-function-arn", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
     );
@@ -11467,9 +11461,7 @@ function Get-cloudformation-validate-template{
    return $flags;
 }
 function Get-cloudformation-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-cloudfront{
@@ -11936,9 +11928,7 @@ function Get-cloudfront-update-streaming-distribution{
    return $flags;
 }
 function Get-cloudfront-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-cloudhsm{
@@ -13237,9 +13227,7 @@ function Get-cloudwatch-untag-resource{
    return $flags;
 }
 function Get-cloudwatch-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-codebuild{
@@ -13893,9 +13881,7 @@ function Get-codecommit-create-unreferenced-merge-commit{
    return $flags;
 }
 function Get-codecommit-credential-helper{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-codecommit-delete-approval-rule-template{
@@ -18663,9 +18649,7 @@ function Get-configservice-get-resource-config-history{
    return $flags;
 }
 function Get-configservice-get-status{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-configservice-list-aggregate-discovered-resources{
@@ -19698,9 +19682,7 @@ function Get-datapipeline-add-tags{
    return $flags;
 }
 function Get-datapipeline-create-default-roles{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-datapipeline-create-pipeline{
@@ -20941,9 +20923,7 @@ function Get-deploy-tag-resource{
    return $flags;
 }
 function Get-deploy-uninstall{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-deploy-untag-resource{
@@ -20989,9 +20969,7 @@ function Get-deploy-update-deployment-group{
    return $flags;
 }
 function Get-deploy-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-detective{
@@ -23451,9 +23429,7 @@ function Get-dms-test-connection{
    return $flags;
 }
 function Get-dms-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-docdb{
@@ -24021,9 +23997,7 @@ function Get-docdb-stop-db-cluster{
    return $flags;
 }
 function Get-docdb-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-ds{
@@ -25168,9 +25142,7 @@ function Get-dynamodb-update-time-to-live{
    return $flags;
 }
 function Get-dynamodb-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-dynamodbstreams{
@@ -30708,9 +30680,7 @@ function Get-ec2-update-security-group-rule-descriptions-ingress{
    return $flags;
 }
 function Get-ec2-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-ec2-withdraw-byoip-cidr{
@@ -30948,9 +30918,7 @@ function Get-ecr-get-login{
    return $flags;
 }
 function Get-ecr-get-login-password{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-ecr-get-repository-policy{
@@ -31097,9 +31065,7 @@ function Get-ecr-upload-layer-part{
    return $flags;
 }
 function Get-ecr-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-ecs{
@@ -31758,9 +31724,7 @@ function Get-ecs-update-task-set{
    return $flags;
 }
 function Get-ecs-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-efs{
@@ -33113,9 +33077,7 @@ function Get-elasticache-test-failover{
    return $flags;
 }
 function Get-elasticache-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-elasticbeanstalk{
@@ -33851,9 +33813,7 @@ function Get-elastictranscoder-update-pipeline-status{
    return $flags;
 }
 function Get-elastictranscoder-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-elb{
@@ -34164,9 +34124,7 @@ function Get-elb-set-load-balancer-policies-of-listener{
    return $flags;
 }
 function Get-elb-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-elbv2{
@@ -34566,9 +34524,7 @@ function Get-elbv2-set-subnets{
    return $flags;
 }
 function Get-elbv2-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-emr{
@@ -38259,9 +38215,7 @@ function Get-glacier-upload-multipart-part{
    return $flags;
 }
 function Get-glacier-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-globalaccelerator{
@@ -39970,8 +39924,8 @@ function Get-greengrass{
       "create-deployment", 
       "create-device-definition", 
       "create-device-definition-version", 
-      "create--definition", 
-      "create--definition-version", 
+      "create-function-definition", 
+      "create-function-definition-version", 
       "create-group", 
       "create-group-certificate-authority", 
       "create-group-version", 
@@ -39985,7 +39939,7 @@ function Get-greengrass{
       "delete-connector-definition", 
       "delete-core-definition", 
       "delete-device-definition", 
-      "delete--definition", 
+      "delete-function-definition", 
       "delete-group", 
       "delete-logger-definition", 
       "delete-resource-definition", 
@@ -40002,8 +39956,8 @@ function Get-greengrass{
       "get-deployment-status", 
       "get-device-definition", 
       "get-device-definition-version", 
-      "get--definition", 
-      "get--definition-version", 
+      "get-function-definition", 
+      "get-function-definition-version", 
       "get-group", 
       "get-group-certificate-authority", 
       "get-group-certificate-configuration", 
@@ -40024,8 +39978,8 @@ function Get-greengrass{
       "list-deployments", 
       "list-device-definition-versions", 
       "list-device-definitions", 
-      "list--definition-versions", 
-      "list--definitions", 
+      "list-function-definition-versions", 
+      "list-function-definitions", 
       "list-group-certificate-authorities", 
       "list-group-versions", 
       "list-groups", 
@@ -40045,7 +39999,7 @@ function Get-greengrass{
       "update-connector-definition", 
       "update-core-definition", 
       "update-device-definition", 
-      "update--definition", 
+      "update-function-definition", 
       "update-group", 
       "update-group-certificate-configuration", 
       "update-logger-definition", 
@@ -40146,7 +40100,7 @@ function Get-greengrass-create-device-definition-version{
     );
    return $flags;
 }
-function Get-greengrass-create--definition{
+function Get-greengrass-create-function-definition{
    $flags=(
       "--amzn-client-token", 
       "--initial-version", 
@@ -40157,7 +40111,7 @@ function Get-greengrass-create--definition{
     );
    return $flags;
 }
-function Get-greengrass-create--definition-version{
+function Get-greengrass-create-function-definition-version{
    $flags=(
       "--amzn-client-token", 
       "--default-config", 
@@ -40305,7 +40259,7 @@ function Get-greengrass-delete-device-definition{
     );
    return $flags;
 }
-function Get-greengrass-delete--definition{
+function Get-greengrass-delete-function-definition{
    $flags=(
       "---definition-id", 
       "--cli-input-json", 
@@ -40446,7 +40400,7 @@ function Get-greengrass-get-device-definition-version{
     );
    return $flags;
 }
-function Get-greengrass-get--definition{
+function Get-greengrass-get-function-definition{
    $flags=(
       "---definition-id", 
       "--cli-input-json", 
@@ -40454,7 +40408,7 @@ function Get-greengrass-get--definition{
     );
    return $flags;
 }
-function Get-greengrass-get--definition-version{
+function Get-greengrass-get-function-definition-version{
    $flags=(
       "---definition-id", 
       "---definition-version-id", 
@@ -40653,7 +40607,7 @@ function Get-greengrass-list-device-definitions{
     );
    return $flags;
 }
-function Get-greengrass-list--definition-versions{
+function Get-greengrass-list-function-definition-versions{
    $flags=(
       "---definition-id", 
       "--cli-input-json", 
@@ -40664,7 +40618,7 @@ function Get-greengrass-list--definition-versions{
     );
    return $flags;
 }
-function Get-greengrass-list--definitions{
+function Get-greengrass-list-function-definitions{
    $flags=(
       "--cli-input-json", 
       "--starting-token", 
@@ -40858,7 +40812,7 @@ function Get-greengrass-update-device-definition{
     );
    return $flags;
 }
-function Get-greengrass-update--definition{
+function Get-greengrass-update-function-definition{
    $flags=(
       "---definition-id", 
       "--name", 
@@ -41952,9 +41906,7 @@ function Get-history{
    return $commands;
 }
 function Get-history-list{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-history-show{
@@ -43464,9 +43416,7 @@ function Get-iam-upload-ssh-public-key{
    return $flags;
 }
 function Get-iam-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-imagebuilder{
@@ -44790,7 +44740,7 @@ function Get-iot-confirm-topic-rule-destination{
 function Get-iot-create-authorizer{
    $flags=(
       "--authorizer-name", 
-      "--authorizer--arn", 
+      "--authorizer-function-arn", 
       "--token-key-name", 
       "--token-signing-public-keys", 
       "--status", 
@@ -46480,7 +46430,7 @@ function Get-iot-update-account-audit-configuration{
 function Get-iot-update-authorizer{
    $flags=(
       "--authorizer-name", 
-      "--authorizer--arn", 
+      "--authorizer-function-arn", 
       "--token-key-name", 
       "--token-signing-public-keys", 
       "--status", 
@@ -48399,9 +48349,7 @@ function Get-iotsitewise-update-project{
    return $flags;
 }
 function Get-iotsitewise-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-iotthingsgraph{
@@ -49555,9 +49503,7 @@ function Get-kinesis-update-shard-count{
    return $flags;
 }
 function Get-kinesis-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-kinesis-video-archived-media{
@@ -51070,21 +51016,21 @@ function Get-lambda{
       "add-permission", 
       "create-alias", 
       "create-event-source-mapping", 
-      "create-", 
+      "create-function", 
       "delete-alias", 
       "delete-event-source-mapping", 
-      "delete-", 
-      "delete--concurrency", 
-      "delete--event-invoke-config", 
+      "delete-function", 
+      "delete-function-concurrency", 
+      "delete-function-event-invoke-config", 
       "delete-layer-version", 
       "delete-provisioned-concurrency-config", 
       "get-account-settings", 
       "get-alias", 
       "get-event-source-mapping", 
       "get-", 
-      "get--concurrency", 
-      "get--configuration", 
-      "get--event-invoke-config", 
+      "get-function-concurrency", 
+      "get-function-configuration", 
+      "get-function-event-invoke-config", 
       "get-layer-version", 
       "get-layer-version-by-arn", 
       "get-layer-version-policy", 
@@ -51093,8 +51039,8 @@ function Get-lambda{
       "invoke", 
       "list-aliases", 
       "list-event-source-mappings", 
-      "list--event-invoke-configs", 
-      "list-s", 
+      "list-function-event-invoke-configs", 
+      "list-functions", 
       "list-layer-versions", 
       "list-layers", 
       "list-provisioned-concurrency-configs", 
@@ -51102,8 +51048,8 @@ function Get-lambda{
       "list-versions-by-", 
       "publish-layer-version", 
       "publish-version", 
-      "put--concurrency", 
-      "put--event-invoke-config", 
+      "put-function-concurrency", 
+      "put-function-event-invoke-config", 
       "put-provisioned-concurrency-config", 
       "remove-layer-version-permission", 
       "remove-permission", 
@@ -51111,9 +51057,9 @@ function Get-lambda{
       "untag-resource", 
       "update-alias", 
       "update-event-source-mapping", 
-      "update--code", 
-      "update--configuration", 
-      "update--event-invoke-config", 
+      "update-function-code", 
+      "update-function-configuration", 
+      "update-function-event-invoke-config", 
       "wait "
     );
    return $commands;
@@ -51173,8 +51119,8 @@ function Get-lambda-create-event-source-mapping{
       "--starting-position-timestamp", 
       "--destination-config", 
       "--maximum-record-age-in-seconds", 
-      "--bisect-batch-on--error", 
-      "--no-bisect-batch-on--error", 
+      "--bisect-batch-on-function-error", 
+      "--no-bisect-batch-on-function-error", 
       "--maximum-retry-attempts", 
       "--cli-input-json", 
       "--generate-cli-skeleton "
@@ -51223,7 +51169,7 @@ function Get-lambda-delete-event-source-mapping{
     );
    return $flags;
 }
-function Get-lambda-delete-{
+function Get-lambda-delete-function{
    $flags=(
       "---name", 
       "--qualifier", 
@@ -51232,7 +51178,7 @@ function Get-lambda-delete-{
     );
    return $flags;
 }
-function Get-lambda-delete--concurrency{
+function Get-lambda-delete-function-concurrency{
    $flags=(
       "---name", 
       "--cli-input-json", 
@@ -51240,7 +51186,7 @@ function Get-lambda-delete--concurrency{
     );
    return $flags;
 }
-function Get-lambda-delete--event-invoke-config{
+function Get-lambda-delete-function-event-invoke-config{
    $flags=(
       "---name", 
       "--qualifier", 
@@ -51291,7 +51237,7 @@ function Get-lambda-get-event-source-mapping{
     );
    return $flags;
 }
-function Get-lambda-get-{
+function Get-lambda-get-function{
    $flags=(
       "---name", 
       "--qualifier", 
@@ -51300,7 +51246,7 @@ function Get-lambda-get-{
     );
    return $flags;
 }
-function Get-lambda-get--concurrency{
+function Get-lambda-get-function-concurrency{
    $flags=(
       "---name", 
       "--cli-input-json", 
@@ -51308,7 +51254,7 @@ function Get-lambda-get--concurrency{
     );
    return $flags;
 }
-function Get-lambda-get--configuration{
+function Get-lambda-get-function-configuration{
    $flags=(
       "---name", 
       "--qualifier", 
@@ -51317,7 +51263,7 @@ function Get-lambda-get--configuration{
     );
    return $flags;
 }
-function Get-lambda-get--event-invoke-config{
+function Get-lambda-get-function-event-invoke-config{
    $flags=(
       "---name", 
       "--qualifier", 
@@ -51405,7 +51351,7 @@ function Get-lambda-list-event-source-mappings{
     );
    return $flags;
 }
-function Get-lambda-list--event-invoke-configs{
+function Get-lambda-list-function-event-invoke-configs{
    $flags=(
       "---name", 
       "--max-items", 
@@ -51505,7 +51451,7 @@ function Get-lambda-publish-version{
     );
    return $flags;
 }
-function Get-lambda-put--concurrency{
+function Get-lambda-put-function-concurrency{
    $flags=(
       "---name", 
       "--reserved-concurrent-executions", 
@@ -51514,7 +51460,7 @@ function Get-lambda-put--concurrency{
     );
    return $flags;
 }
-function Get-lambda-put--event-invoke-config{
+function Get-lambda-put-function-event-invoke-config{
    $flags=(
       "---name", 
       "--qualifier", 
@@ -51599,8 +51545,8 @@ function Get-lambda-update-event-source-mapping{
       "--maximum-batching-window-in-seconds", 
       "--destination-config", 
       "--maximum-record-age-in-seconds", 
-      "--bisect-batch-on--error", 
-      "--no-bisect-batch-on--error", 
+      "--bisect-batch-on-function-error", 
+      "--no-bisect-batch-on-function-error", 
       "--maximum-retry-attempts", 
       "--parallelization-factor", 
       "--cli-input-json", 
@@ -51608,7 +51554,7 @@ function Get-lambda-update-event-source-mapping{
     );
    return $flags;
 }
-function Get-lambda-update--code{
+function Get-lambda-update-function-code{
    $flags=(
       "---name", 
       "--zip-file", 
@@ -51625,7 +51571,7 @@ function Get-lambda-update--code{
     );
    return $flags;
 }
-function Get-lambda-update--configuration{
+function Get-lambda-update-function-configuration{
    $flags=(
       "---name", 
       "--role", 
@@ -51646,7 +51592,7 @@ function Get-lambda-update--configuration{
     );
    return $flags;
 }
-function Get-lambda-update--event-invoke-config{
+function Get-lambda-update-function-event-invoke-config{
    $flags=(
       "---name", 
       "--qualifier", 
@@ -51659,9 +51605,7 @@ function Get-lambda-update--event-invoke-config{
    return $flags;
 }
 function Get-lambda-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-lex-models{
@@ -54392,9 +54336,7 @@ function Get-machinelearning-update-ml-model{
    return $flags;
 }
 function Get-machinelearning-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-macie{
@@ -55877,9 +55819,7 @@ function Get-medialive-update-reservation{
    return $flags;
 }
 function Get-medialive-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-mediapackage{
@@ -58585,9 +58525,7 @@ function Get-neptune-stop-db-cluster{
    return $flags;
 }
 function Get-neptune-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-networkmanager{
@@ -59858,9 +59796,7 @@ function Get-opsworks-update-volume{
    return $flags;
 }
 function Get-opsworks-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-opsworks-cm{
@@ -60097,9 +60033,7 @@ function Get-opsworks-cm-update-server-engine-attributes{
    return $flags;
 }
 function Get-opsworks-cm-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-organizations{
@@ -66319,9 +66253,7 @@ function Get-rds-stop-db-instance{
    return $flags;
 }
 function Get-rds-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-rds-data{
@@ -67586,9 +67518,7 @@ function Get-redshift-rotate-encryption-key{
    return $flags;
 }
 function Get-redshift-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-rekognition{
@@ -68106,9 +68036,7 @@ function Get-rekognition-stop-stream-processor{
    return $flags;
 }
 function Get-rekognition-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-resource-groups{
@@ -69379,9 +69307,7 @@ function Get-route53-update-traffic-policy-instance{
    return $flags;
 }
 function Get-route53-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-route53domains{
@@ -69999,9 +69925,7 @@ function Get-s3-ls{
    return $flags;
 }
 function Get-s3-mb{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-s3-mv{
@@ -71189,9 +71113,7 @@ function Get-s3api-upload-part-copy{
    return $flags;
 }
 function Get-s3api-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-s3control{
@@ -73077,9 +72999,7 @@ function Get-sagemaker-update-workteam{
    return $flags;
 }
 function Get-sagemaker-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-sagemaker-a2i-runtime{
@@ -73600,9 +73520,7 @@ function Get-schemas-update-schema{
    return $flags;
 }
 function Get-schemas-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-sdb{
@@ -75318,9 +75236,7 @@ function Get-servicecatalog-execute-provisioned-product-service-action{
    return $flags;
 }
 function Get-servicecatalog-generate{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-servicecatalog-get-aws-organizations-access-status{
@@ -76685,9 +76601,7 @@ function Get-ses-verify-email-identity{
    return $flags;
 }
 function Get-ses-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-sesv2{
@@ -77518,9 +77432,7 @@ function Get-signer-untag-resource{
    return $flags;
 }
 function Get-signer-wait{
-   $flags=(
-      " "
-    );
+   $flags=("");
    return $flags;
 }
 function Get-sms{
