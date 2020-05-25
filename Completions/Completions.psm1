@@ -10741,7 +10741,7 @@ function Get-cloudformation{
       "delete-stack", 
       "delete-stack-instances", 
       "delete-stack-set", 
-      "deploy/index", 
+      "deploy", 
       "deregister-type", 
       "describe-account-limits", 
       "describe-change-set", 
@@ -10938,7 +10938,7 @@ function Get-cloudformation-delete-stack-set{
     );
    return $flags;
 }
-function Get-cloudformation-deploy/index{
+function Get-cloudformation-deploy{
    $flags=(
       "--template-file", 
       "--stack-name", 
@@ -13677,7 +13677,7 @@ function Get-codecommit{
       "create-pull-request-approval-rule", 
       "create-repository", 
       "create-unreferenced-merge-commit", 
-      "credential-helper/index", 
+      "credential-helper", 
       "delete-approval-rule-template", 
       "delete-branch", 
       "delete-comment-content", 
@@ -13892,7 +13892,7 @@ function Get-codecommit-create-unreferenced-merge-commit{
     );
    return $flags;
 }
-function Get-codecommit-credential-helper/index{
+function Get-codecommit-credential-helper{
    $flags=(
       " "
     );
@@ -31113,7 +31113,7 @@ function Get-ecs{
       "delete-cluster", 
       "delete-service", 
       "delete-task-set", 
-      "deploy/index", 
+      "deploy", 
       "deregister-container-instance", 
       "deregister-task-definition", 
       "describe-capacity-providers", 
@@ -31277,7 +31277,7 @@ function Get-ecs-delete-task-set{
     );
    return $flags;
 }
-function Get-ecs-deploy/index{
+function Get-ecs-deploy{
    $flags=(
       "--service", 
       "--task-definition", 
@@ -74774,7 +74774,7 @@ function Get-servicecatalog{
       "enable-aws-organizations-access", 
       "execute-provisioned-product-plan", 
       "execute-provisioned-product-service-action", 
-      "generate/index", 
+      "generate", 
       "get-aws-organizations-access-status", 
       "list-accepted-portfolio-shares", 
       "list-budgets-for-resource", 
@@ -75317,7 +75317,7 @@ function Get-servicecatalog-execute-provisioned-product-service-action{
     );
    return $flags;
 }
-function Get-servicecatalog-generate/index{
+function Get-servicecatalog-generate{
    $flags=(
       " "
     );
