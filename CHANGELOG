@@ -1,4 +1,4 @@
-## Upcoming
+## 1.0.3 2020-05-26
 - Perf: Moving from ArrayLists to Arrays to improve memory allocation 
 - Perf: Removed White-space to reduce module file size- again for memory
 - Enhancement: Now invokes Register-AWSCompleter on Imporr-Module - No Need to call Register-AWSCompleter
